@@ -8,6 +8,6 @@ class OnlineChannel < ApplicationCable::Channel
   end
 
   def appear
-    ActionCable.server.broadcast "online_channel", message: "#{current_user.username} has joined"
+    ActionCable.server.broadcast "online_channel", message: "#{current_user.username}"
   end
 end

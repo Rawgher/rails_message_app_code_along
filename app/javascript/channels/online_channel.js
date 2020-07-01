@@ -13,5 +13,6 @@ consumer.subscriptions.create("OnlineChannel", {
   received(data) {
     // Called when there's incoming data on the websocket for this channel
     console.log(data.message)
+    $('#user_table').append('<a class="item">' + data.message + '</a>')
   }
 });
