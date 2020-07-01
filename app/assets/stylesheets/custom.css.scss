@@ -5,3 +5,7 @@
 .chat-button {display: none;}
 #messages { overflow: auto; height: 15em;}
 #user_table a {text-align: center;}
+
+@media (max-width: 414px) {
+  .ui.vertical.divider {display: none;}
+}
